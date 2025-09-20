@@ -61,10 +61,7 @@ ax1.grid()                        #グラフのグリッドを表示
 
 ## グラフ Mahalanobis Distance
 sample_idx = np.arange(1, len(mahala_result2) + 1) #サンプルインデックスを表示
-
-#ax2.plot(sample_idx, mahala_result2, marker='o', linestyle='none') #マハラノビス距離を表示(マーカーを表示)
-ax2.plot(sample_idx, mahala_result2, linestyle='-') #マハラノビス距離を表示(線を表示)
-
+ax2.plot(sample_idx, mahala_result2, marker='o', linestyle='none') #マハラノビス距離を表示
 ax2.set_title('Mahalanobis Distance')  #グラフのタイトルを設定
 ax2.set_xlabel('sample index')         #グラフの軸ラベルを設定
 ax2.set_ylabel('Mahalanobis distance') #グラフの軸ラベルを設定  
